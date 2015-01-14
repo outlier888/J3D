@@ -189,7 +189,7 @@ J3D.Loader.parseJSONScene = function(renderer, scene, jscene, jmeshes, jsanim) {
             t.scale.set(s[0], s[1], s[2]);
         }
 
-        if(td.mesh) t.geometry = jmeshes[td.mesh];
+        if(td.mesh) t.geometry = jmeshes[td.meshId];
         if(td.renderer) t.material = jscene.materials[td.renderer];
 
         // if (t.animation) t.animation = jsanim[t.animation];
